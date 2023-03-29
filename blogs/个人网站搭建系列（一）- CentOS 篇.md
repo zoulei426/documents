@@ -1,7 +1,7 @@
 # 个人网站搭建系列（一）- CentOS 篇
 > 本文档介绍了在 CentOS 服务器上快速搭建个人网站的简要流程，主要通过 Docker 这种容器化技术完成。
 
-### 安装 Docker
+### 1 安装 Docker
 
 - 使用 `root` 权限更新 `yum` 包
 ```
@@ -56,7 +56,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-### 安装 Portainer
+### 2 安装 Portainer
 
 - 安装 `Portainer`
 ```
@@ -65,14 +65,14 @@ docker run -d -p 9000:9000 --name portainer --restart=always -v /var/run/docker.
 
 - 在云服务上配置防火墙策略，开放 `9000` 端口，后续安装的服务请根据需求同样开放对应的端口
 
-### 安装 MySQL 数据库
+### 3 安装 MySQL 数据库
 
 - 安装 `MySQL`，其中 `my-secret-pw` 是 root 用户的密码，请自行修改
 ```
 docker run --name mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -p 3306:3306 -d mysql
 ```
 
-### 安装 WordPress
+### 4 安装 WordPress
 
 - 安装 `WordPress`
 ```
