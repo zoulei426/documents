@@ -84,3 +84,6 @@ docker run --name wordpress --link mysql:mysql -p 8080:80 -d wordpress
 ```
 cd /var/lib/docker/volumes/xxx/_data
 ```
+
+docker commit ce74 wordpress1
+docker run -ti --link mysql:mysql -p 8081:80 -v /opt/wordpress:/var/www/html wordpress1 /bin/bash

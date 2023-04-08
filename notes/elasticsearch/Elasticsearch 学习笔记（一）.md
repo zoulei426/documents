@@ -66,5 +66,4 @@ elasticsearch:
 monitoring:
   enabled: true
 ```
-
 最后访问控制台 http://localhost:5601/app/dev_tools#/console

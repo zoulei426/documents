@@ -19,3 +19,13 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
 ## 1.2 方案二：Docker 部署
 
 TODO
+
+# 2 模型
+
+TODO
+
+# 3 关键词
+
+- [关键词数据库](https://stablediffusionweb.com/prompts)
+- 词缀超市：https://tags.novelai.dev/
+分享社群：https://www.aigodlike.com/ 
