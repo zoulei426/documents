@@ -1,3 +1,7 @@
+# 简介
+
+项目地址：https://github.com/Mikubill/sd-webui-controlnet
+
 # 1 安装 ControlNet 扩展
 
 进入 `Extensions` 选项卡，点击 `Load From`，在搜索框中输入 `sd-webui-controlnet`，点击 `Install` 等待安装完成。
@@ -14,7 +18,7 @@
 - 原版：https://huggingface.co/lllyasviel/ControlNet/tree/main/models
 - 精简版：https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
 
-下载完成后放到 extensions\sd-webui-controlnet\models 目录下
+下载完成后放到 `extensions\sd-webui-controlnet\models` 目录下
 
 ## 2.2 预处理器与模型对应表
 
@@ -38,3 +42,5 @@
 `Canny` 模型的主要功能是提取并生成线稿，通过线稿进行二次绘制。
 
 TODO
+
+## 3.x resample
