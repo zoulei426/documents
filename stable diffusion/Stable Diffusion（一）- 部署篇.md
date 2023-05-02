@@ -56,21 +56,69 @@ docker run -it --name stable-diffusion-webui \
 ![00042-2774243862](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00042-2774243862.png)
 > mdjrny-v4 style a highly detailed matte painting of a man on a hill watching a rocket launch in the distance by studio ghibli, makoto shinkai, by artgerm, by wlop, by greg rutkowski, volumetric lighting, octane render, 4 k resolution, trending on artstation, masterpiece
 
-## 2.2 模型推荐：dreamlike-photoreal-2.0
+## 2.2 模型推荐：Deliberate
 
-来自 `dreamlike-art` 的超现实风格的模型，TODO
+一款写实向的模型
+- 下载地址：[deliberate](https://huggingface.co/XpucT/Deliberate/tree/main)
 
+## 2.3 模型推荐：tmndMix
+
+一款适合于优美风景的模型
+- 下载地址：[tmnd-mix](https://huggingface.co/ckpt/tmnd-mix/tree/main)
+
+![00137-1451192500](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00137-1451192500.png)
+> masterpiece, best quality, sun, sky,  mountain, forest, grassland, river, overlooking, bridge, wheat field, birds, colored clouds, buildings, paddy field
+
+## 2.4 模型推荐：dreamlike-photoreal
+
+来自 `dreamlike-art` 的超现实风格的模型
+- 下载地址：[dreamlike-photoreal-2.0 ](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0/tree/main)
+
+![00113-2516665644](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00113-2516665644.png)
+> 1pikachu, from Monsters inc, cute, pixar, unreal engine, tron, hyper detailed, volumetric lighting, ultra-detailed, light leaks, trending on artstation, sharp focus, intricat
+
+## 2.5 模型推荐 revAnimated
+
+额外搭配一个微缩景观模型 `Miniatureworldstyle` 可以实现比较精致的微缩世界
+> `Miniatureworldstyle` 是一种 `LyCORIS` 模型，与 `LoRA` 模型类似，但 `sdWebUI` 没有内置这个类型的模型，需要先下载 `a1111-sd-webui-lycoris` 插件，然后重启应用生效。
+>
+> 有关 `LoRA`、`LyCORIS` 等模型在下一篇文章详解。
+
+- 下载地址：[revAnimated](https://huggingface.co/hanafuusen2001/ReVAnimated/tree/main)，[Miniatureworldstyle](https://huggingface.co/ygdm123/Miniatureworldstyle/tree/main)
+
+使用方式：
+- 在 prompt 中加上 `<lyco:miniatureWorldStyle_v10:0.8>`，建议权重在 0.6-0.9 之间
+- 使用 `mini(ttp)` 触发整体效果
+- 使用 `miniature`, `lanpscape` 触发模型效果
+- 使用容器的名字放在最后，比如 `plate`, `cup`, `bowl` 等可以把微缩城市装进去
+- 使用 `isometric` 来触发方块
+- 使用类似 `statue of Liberty` 的单词来触发主建筑物，使用 `one man in the bathroom` 这样的词来触发人物场景
+
+![00188-2532553446](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00188-2532553446.png)
+> mini(ttp), (8k, RAW photo, best quality, ultra-detailed, masterpiece:1.2), (realistic:1.37), Snow-capped mountains with snow, miniature, landscape, in bowl, \<lyco:miniminiatureWorldStyle_v10ature_V1:0.8\>
 
 # 3 提示词
 
 # 3.1 常用提示词参考
 
-提高质量的正向提示词
+常用提高质量的正向提示词：
+
 | 正向提示词 | 描述 |
 | :-------- | :--- |
 | HDR, UHD, 8K (HDR、UHD、4K、8K和64K) | 提升照片的质量 |
 | best quality | 最佳质量 |
-| Highly detailed | 更多细节 |
+| Highly detailed, ultra-detailed | 更多细节 |
+| masterpiece | 杰作 |
+| realistic, photo-realistic | 真实的 |
+| ... | ... |
+
+常用提高质量的反向提示词：
+
+| 反向提示词 | 描述 |
+| :-------- | :--- |
+| worst quality, low quality, normal quality | 低质量 |
+| watermark, signature, text, extra digit | 水印、签名、额外的数字等 |
+| deformed, bad anatomy, badly drawn face, extra limb, mutated hands and fingers, malformed limbs, deformed hands | 人物变形 |
 | ... | ... |
 
 参考网址：
