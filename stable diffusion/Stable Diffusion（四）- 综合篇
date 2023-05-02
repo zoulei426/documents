@@ -1,0 +1,13 @@
+## CuteRichStyle
+
+模型下载：[cbzbb](https://huggingface.co/RichVip/Cute_RichStyle_2/resolve/main/cbzbb_step_6000-002.ckpt)
+
+使用方式：cbzbb, cbzbb style, cbzbb style of _____ 
+
+possible positives: cute, little, baby, beautiful, fantasy art, devian art, trending artstation, digital art, detailed, cute, realistic, humanoide, character, tiny, film still of "__" , cinematic shot , "" environment, beautiful landspace of _____, cinematic portrait of _____, cute character as a ""....
+
+If you want to make it less realistic, put the word: character in positive prompt
+
+most important negatives (not mandatory but they help a lot) : pencil draw, bad photo, bad draw
+
+other possible negatives: cartoon, woman, man, person, people, character, super hero, iron man, baby, anime...

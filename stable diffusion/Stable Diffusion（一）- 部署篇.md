@@ -51,23 +51,29 @@ docker run -it --name stable-diffusion-webui \
 
 
 ![00013-1870768007](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00013-1870768007.png)
-> mdjrny-v4 style, magic spell book sitting on a table in the catacombs, hypermaximalist, insanely detailed and intricate, octane render, unreal engine, 8k, by greg rutkowski and Peter Mohrbacher and magali villeneuve
+```
+mdjrny-v4 style, magic spell book sitting on a table in the catacombs, hypermaximalist, insanely detailed and intricate, octane render, unreal engine, 8k, by greg rutkowski and Peter Mohrbacher and magali villeneuve
+```
 
 ![00042-2774243862](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00042-2774243862.png)
-> mdjrny-v4 style a highly detailed matte painting of a man on a hill watching a rocket launch in the distance by studio ghibli, makoto shinkai, by artgerm, by wlop, by greg rutkowski, volumetric lighting, octane render, 4 k resolution, trending on artstation, masterpiece
+```
+mdjrny-v4 style a highly detailed matte painting of a man on a hill watching a rocket launch in the distance by studio ghibli, makoto shinkai, by artgerm, by wlop, by greg rutkowski, volumetric lighting, octane render, 4 k resolution, trending on artstation, masterpiece
+```
 
 ## 2.2 模型推荐：Deliberate
 
 一款写实向的模型
 - 下载地址：[deliberate](https://huggingface.co/XpucT/Deliberate/tree/main)
 
-## 2.3 模型推荐：tmndMix
+## 2.3 模型推荐：TmndMix
 
 一款适合于优美风景的模型
 - 下载地址：[tmnd-mix](https://huggingface.co/ckpt/tmnd-mix/tree/main)
 
 ![00137-1451192500](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00137-1451192500.png)
-> masterpiece, best quality, sun, sky,  mountain, forest, grassland, river, overlooking, bridge, wheat field, birds, colored clouds, buildings, paddy field
+```
+masterpiece, best quality, sun, sky,  mountain, forest, grassland, river, overlooking, bridge, wheat field, birds, colored clouds, buildings, paddy field
+```
 
 ## 2.4 模型推荐：dreamlike-photoreal
 
@@ -75,9 +81,11 @@ docker run -it --name stable-diffusion-webui \
 - 下载地址：[dreamlike-photoreal-2.0 ](https://huggingface.co/dreamlike-art/dreamlike-photoreal-2.0/tree/main)
 
 ![00113-2516665644](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00113-2516665644.png)
-> 1pikachu, from Monsters inc, cute, pixar, unreal engine, tron, hyper detailed, volumetric lighting, ultra-detailed, light leaks, trending on artstation, sharp focus, intricat
+```
+1pikachu, from Monsters inc, cute, pixar, unreal engine, tron, hyper detailed, volumetric lighting, ultra-detailed, light leaks, trending on artstation, sharp focus, intricat
+```
 
-## 2.5 模型推荐 revAnimated
+## 2.5 模型推荐 RevAnimated
 
 额外搭配一个微缩景观模型 `Miniatureworldstyle` 可以实现比较精致的微缩世界
 > `Miniatureworldstyle` 是一种 `LyCORIS` 模型，与 `LoRA` 模型类似，但 `sdWebUI` 没有内置这个类型的模型，需要先下载 `a1111-sd-webui-lycoris` 插件，然后重启应用生效。
@@ -95,7 +103,26 @@ docker run -it --name stable-diffusion-webui \
 - 使用类似 `statue of Liberty` 的单词来触发主建筑物，使用 `one man in the bathroom` 这样的词来触发人物场景
 
 ![00188-2532553446](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00188-2532553446.png)
-> mini(ttp), (8k, RAW photo, best quality, ultra-detailed, masterpiece:1.2), (realistic:1.37), Snow-capped mountains with snow, miniature, landscape, in bowl, \<lyco:miniminiatureWorldStyle_v10ature_V1:0.8\>
+```
+mini(ttp), (8k, RAW photo, best quality, ultra-detailed, masterpiece:1.2), (realistic:1.37), Snow-capped mountains with snow, miniature, landscape, in bowl, <lyco:miniatureWorldStyle_v10:0.8>
+```
+
+## 2.6 模型推荐 GuoFeng
+
+额外搭配水墨风的模型 `墨心`、`疏可走马` 可以实现写意的中国画
+
+- 下载地址：[GuoFeng3.3](https://huggingface.co/xiaolxl/GuoFeng3/tree/main)，[墨心 MoXin](https://huggingface.co/datamonet/MoXin/tree/main)
+
+使用方式：
+- `墨心` 推荐 LoRA 权重为 0.85 以下，`疏可走马` 推荐 LoRA 权重为 0.7-1
+- CFG 范围会改变风格，1-3 大小写意，3-7 逐渐工笔
+- 使用 `shuimobysim`, `wuchangshuo`, `bonian`, `zhenbanqiao`, `badashanren` 等提示词触发
+
+![00410-2424518278](https://zoulei-images.oss-cn-chengdu.aliyuncs.com/md-images/00410-2424518278.png)
+```
+shukezouma, negative space, shuimobysim,
+a branch of flower, traditional chinese ink painting, <lora:Moxin_Shukezouma11:0.8>, <lora:MoXinV1:0.7>
+```
 
 # 3 提示词
 
